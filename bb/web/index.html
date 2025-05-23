@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="bb">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>bb</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- ✅ Добавь Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js"></script>
+
+  <!-- ✅ Инициализация Firebase -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBKo1mqwJMj6flJWhR_P91F0X9mEpuo7hw",
+      authDomain: "fellan-4e5bc.firebaseapp.com",
+      projectId: "fellan-4e5bc",
+      storageBucket: "fellan-4e5bc.appspot.com",
+      messagingSenderId: "396283878610",
+      appId: "1:396283878610:web:137665e9b2970fa19f610b",
+      measurementId: "G-PYBXTSY5PR"
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
